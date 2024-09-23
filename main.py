@@ -1,7 +1,7 @@
 # main.py
 
 def hello_world():
-    return "Hello from Justin Myers!"
+    return "Welcome to Git!"
 
 if __name__ == "__main__":
     print(hello_world())
