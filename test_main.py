@@ -2,7 +2,6 @@
 
 import unittest
 from main import hello_world
-from main import greet_person
 
 class TestHelloWorld(unittest.TestCase):
     def test_hello_world(self):
@@ -12,10 +11,12 @@ if __name__ == '__main__':
     unittest.main()
 
 
+
+from main import greet_person
+
 class TestHelloWorld(unittest.TestCase):
     def test_greet_person(self):
-        response = greet_person("Susan")
-        self.assertTrue(type(response))
+        self.assertEqual(greet_person(), "Hello, Susan!")
 
 if __name__ == '__second__':
     unittest.main() 
